@@ -1,0 +1,199 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    min-height: 100vh;
+    background-color: rgb(242, 242, 242);
+}
+.title_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto 2em auto;
+}
+.title {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: -8px;
+    letter-spacing: 1px;
+}
+.subtitle {
+    color: grey;
+    margin: auto;
+}
+.date_wrapper {
+    display: flex;
+    gap: 3em;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin: 0 15vw 2em 15vw;
+}
+.date_wrapper span {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.datepicker_wrapper {
+    display: flex;
+    gap: 2em;
+}
+.submit_btn {
+    width: fit-content;
+    border: none;
+    background-color: rgb(4, 116, 203);
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit_btn:hover {
+    background-color: rgb(3, 74, 207);
+}
+.table {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 15vw 0 15vw;
+    background-color: white;
+    
+}
+.table_item:first-child {
+    color: grey;
+    cursor: auto;
+}
+.table_item:first-child:hover {
+    background-color: white;
+}
+.table_item {
+    display: grid;
+    padding: 1em 2em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.256);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    cursor: pointer;
+}
+.table_item:hover {
+    background-color: rgb(234, 234, 234);
+}
+.table_item:last-child {
+    border-bottom: none;
+}
+.table_controls {
+    display: flex;
+    padding: 0 1em;
+    margin: 0 15vw 1em 15vw;
+}
+.page_btn {
+    border: none;
+    background: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.page_btn:disabled {
+    text-decoration: none;
+}
+.page_index {
+    margin-left: auto;
+}
+.date_form {
+    width: 300px;
+}
+
+
+.details_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.232);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.clickable_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    cursor: pointer;
+}
+.details_container {
+    background-color: white;
+    width: max-content;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 4em;
+    border-radius: 10px;
+    z-index: 1;
+}
+.details_name {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.details_hazard {
+    font-weight: 500;
+    color: grey;
+    margin: 0 0 2em 0;
+}
+.details_datelist {
+    display: flex;
+    flex-direction: column;
+}
+.log_out {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.9em;
+    color: grey;
+}
+.log_out:hover {
+    color: black;
+}
+
+
+
+
+
+/* Login */
+.login_wrapper {
+    height: 100vh;
+    display: flex;
+    padding-bottom: 4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.login_btn {
+    border: none;
+    background-color: rgb(4, 116, 203);
+    color: white;
+    padding: 1em 2em;
+    font-size: 0.7em;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.login_btn:hover {
+    background-color: rgb(3, 74, 207);
+}
